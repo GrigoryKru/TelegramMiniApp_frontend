@@ -1,8 +1,8 @@
 import React from 'react';
-import { useTelegram } from './components/hooks/use-telegram';
+import { useTelegram } from '../hooks/use-telegram';
 
 const Header = () => {
-const {user, onClose} = useTelegram();
+  const { user, onClose } = useTelegram();
 
   return (
     <div className={'header'}>
