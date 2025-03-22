@@ -3,9 +3,11 @@ import './App.css';
 import { useTelegram } from './components/hooks/use-telegram';
 
 function App() {
+  const tg = useTelegram().tg;
+
   useEffect(() => {
-    useTelegram().tg.ready();
-  }, [useTelegram().tg]);
+    tg.ready();
+  }, [tg]);
 
   return (
     <div className="App">
