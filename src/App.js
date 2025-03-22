@@ -3,7 +3,7 @@ import './App.css';
 import { useTelegram } from './components/hooks/use-telegram';
 
 function App() {
-  const { tg, onToggleButton } = useTelegram;
+  const { tg, onToggleButton } = useTelegram();
 
   useEffect(() => {
     tg.ready();
